@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="InterfaceHund.CreatePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    xmlns:local="using:InterfaceHund"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <muxc:NavigationView x:Name="nvSample" PaneDisplayMode="Top" IsBackButtonVisible="Auto" IsBackEnabled="True" BackRequested="nvSample_BackRequested" Background="#FF79A8AB" Foreground="Black">
+            <muxc:NavigationView.MenuItems>
+                <muxc:NavigationViewItem  x:Name="mnuHome" Content="Hundar" Tag="Home" Tapped="mnuMain_Tapped" FontFamily="Bookman Old Style" FontWeight="Bold" FontSize="16" />
+                <muxc:NavigationViewItem  x:Name="mnuCreate" Content="Lägg till" Tag="Create" Tapped="mnuCreate_Tapped" FontFamily="Bookman Old Style" FontWeight="Bold" FontSize="16"/>
+                <muxc:NavigationViewItem  x:Name="mnuUppdate" Content="Ändra" Tag="Update" Tapped="mnuUpdate_Tapped" FontFamily="Bookman Old Style" FontWeight="Bold" FontSize="16"/>
+                <muxc:NavigationViewItem  x:Name="mnuDelete" Content="Ta bort" Tag="Delete" Tapped="mnuDelete_Tapped" FontFamily="Bookman Old Style" FontWeight="Bold" FontSize="16"/>
+            </muxc:NavigationView.MenuItems>
+        </muxc:NavigationView>
+        <Frame x:Name="contentFrame" RenderTransformOrigin="0.496,0.264">
+            <Button x:Name="CreateHund" Click="Btn_Create" Content="Lägg till Hund" Margin="37,307,0,0" VerticalAlignment="Top" Width="158" FontSize="16" Background="#3300A0FF"/>
+        </Frame>
+        <Grid>
+            <TextBox x:Name="Hnamn" Header="Hundens namn: " PlaceholderText="Name"  HorizontalAlignment="Left" Margin="37,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="161" />
+            <TextBox x:Name="Hras" Header="Ras: " PlaceholderText="Ras" HorizontalAlignment="Left" Margin="37,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="161"/>
+            <StackPanel>
+                <ComboBox x:Name="ShowOwner" PlaceholderText="Ägare" Margin="37,245,0,0" Width="160">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Name}"/>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

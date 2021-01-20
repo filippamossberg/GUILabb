@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Source>C:\Users\Filippa Mossberg\Documents\Skolan\Trean\ARP400\dog.png</Source>
+    <SmallTileSource>C:\Users\Filippa Mossberg\Documents\Skolan\Trean\ARP400\dog.png</SmallTileSource>
+    <MediumTileSource>C:\Users\Filippa Mossberg\Documents\Skolan\Trean\ARP400\dog.png</MediumTileSource>
+    <WideTileSource>C:\Users\Filippa Mossberg\Documents\Skolan\Trean\ARP400\dog.png</WideTileSource>
+    <LargeTileSource>C:\Users\Filippa Mossberg\Documents\Skolan\Trean\ARP400\dog.png</LargeTileSource>
+    <AppIconSource>C:\Users\Filippa Mossberg\Documents\Skolan\Trean\ARP400\dog.png</AppIconSource>
+    <SplashScreenSource>C:\Users\Filippa Mossberg\Documents\Skolan\Trean\ARP400\dog.png</SplashScreenSource>
+    <PackageLogoSource>C:\Users\Filippa Mossberg\Documents\Skolan\Trean\ARP400\dog.png</PackageLogoSource>
+  </PropertyGroup>
+</Project>
